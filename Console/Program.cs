@@ -40,3 +40,67 @@ class Program
       }
 }
 //Возможно, есть более простая реализация вывода данных, но у меня почему-то не сработал метод string.Join
+
+/*using System;
+
+class Program
+{      
+      static void Main()
+      {
+            string[] Text = ["1234", "1567", "-2", "computer science"];
+            string[] NewText = new string[Text.Length];
+            int j = 0;
+            Console.WriteLine(string.Join(", ",Text));
+
+            for (int i = 0; i < Text.Length; i++)
+            {
+                  if (Text[i].Length < 4)
+                  {
+                        NewText[j] = Text[i];
+                        j++;  
+                  }
+            }
+            if (j == 0)
+                  Console.Write("[]");
+
+            Array.Resize(ref NewText, j);
+
+            foreach (string n in NewText)
+            {
+                  Console.Write(string.Join(", ",n));
+            }
+      }
+}*/
+
+/*using System;
+
+class Program
+{      
+      static void Main()
+      {
+            string[] Text = ["Russia", "Denmark", "Kazan"];
+            string[] NewText = new string[Text.Length];
+            int j = 0;
+            Console.Write(string.Join(", ",Text));
+            Console.Write(" -> ");
+
+            for (int i = 0; i < Text.Length; i++)
+            {
+                  if (Text[i].Length < 4)
+                  {
+                        NewText[j] = Text[i];
+                        j++;
+                  }
+                        
+            }
+            if (j == 0)
+            Console.Write("[]");
+
+            Array.Resize(ref NewText, j);
+
+            foreach (string n in NewText)
+            {
+                  Console.Write(string.Join(", ",n));
+            }
+      }
+}*/
